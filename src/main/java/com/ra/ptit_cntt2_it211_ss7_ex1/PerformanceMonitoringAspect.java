@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
 @Aspect
 @Component
 public class PerformanceMonitoringAspect {
-    @Around("execution(* com.bank.digital.transaction.service.*.*(..))")
+    @Around("execution(* com.ra.ptit_cntt2_it211_ss7_ex1.*.*(..))")
     public Object monitorPerformance(ProceedingJoinPoint joinPoint) throws Throwable {
         long startTime = System.currentTimeMillis();
         String methodName = joinPoint.getSignature().getName();
